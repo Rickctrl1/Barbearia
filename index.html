@@ -14,54 +14,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
     <!-- FontAwesome para os ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    
 </head>
 <body>
 
     <div class="login-card">
+        <!-- Lado Esquerdo: Logo -->
         <div class="logo">
             <img src="icon.png" alt="" class="logo-img">
-                <h1 class="subtitle">Diamante</h1>
-                <p class="subtitle"><b>BARBEARIA</b></p>
-                <p class="subtitle" style="font-size: 0.6em;">desde 2016</p>
+            <h1 class="subtitle">Diamante</h1>
+            <p class="subtitle"><b>BARBEARIA</b></p>
+            <p class="subtitle" style="font-size: 0.6em;">desde 2016</p>
         </div>
         
-        
+        <!-- Lado Direito: Formulário -->
+        <div class="form-container">
+            <form action="#" method="POST">
+                <!-- Campo de E-mail -->
+                <div class="input-campo">
+                    <i class="fa-regular fa-envelope icon-left"></i>
+                    <input type="email" placeholder="Insira seu e-mail" required>
+                </div>
 
-        <form action="#" method="POST">
-            <!-- Campo de E-mail -->
-            <div class="input-campo">
-                <i class="fa-regular fa-envelope icon-left"></i>
-                <input type="email" placeholder="Insira seu e-mail" required>
+                <!-- Campo de Senha -->
+                <div class="input-campo">
+                    <i class="fa-solid fa-lock icon-left"></i>
+                    <input type="password" placeholder="Digite sua senha" required>
+                    <i class="fa-solid fa-eye-slash icon-right" title="Toggle password visibility"></i>
+                </div>
+
+                <!-- Botão Login -->
+                <button type="submit" class="btn-primary">Login</button>
+
+                <!--botão do barbeiro-->
+                <button type="submit" class="btn-secundary">Área do barbeiro </button>
+            </form>
+
+            <!-- Redes Sociais -->
+            <div class="social-login">
+                <button type="button" class="btn-social">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
             </div>
 
-            <!-- Campo de Senha -->
-            <div class="input-campo">
-                <i class="fa-solid fa-lock icon-left"></i>
-                <input type="password" placeholder="Digite sua senha" required>
-                <i class="fa-solid fa-eye-slash icon-right" title="Toggle password visibility"></i>
-            </div>
-
-            <!-- Botão Login -->
-            <button type="submit" class="btn-primary">Login</button>
-
-            <!--botão do barbeiro-->
-            <button type="submit" class="btn-secundary">Área do barbeiro </button>
-        </form>
-
-        <!-- Redes Sociais -->
-        <div class="social-login">
-            <button type="button" class="btn-social">
-                <i class="fa-brands fa-google"></i> Google
-            </button>
-            
+            <!-- Rodapé -->
+            <p class="footer-text">
+                Não tem conta? <a href="#">Sign up</a>
+            </p>
         </div>
-
-        <!-- Rodapé -->
-        <p class="footer-text">
-            Não tem conta? <a href="#">Sign up</a>
-        </p>
     </div>
 
 </body>

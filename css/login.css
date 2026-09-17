@@ -1,11 +1,11 @@
-/* Container Principal do Card de Login */
-@media screen and (max-width: 600px){
+/*login.css*/
+
+@media screen and (max-width: 600px){ /*TELA MOBILE*/
     .login-card {
     background-color: var(--fundo-card);
-    width: 90%;
+    width: 100%;
     max-width: 340px;
     padding: 45px 17px;
-    
     border-radius: 24px;
     box-shadow: -15px 0 45px -20px rgba(66, 153, 225, 0.15), 
                  15px 0 45px -20px rgba(66, 153, 225, 0.15),
@@ -14,8 +14,6 @@
     }
 
     /* Área da Logo e Textos */
-
-    /* teste de versionamento */
 
     .logo {
         padding-bottom: 25px;
@@ -45,7 +43,6 @@
         margin-top: -3px;        
     }
 
-    /* Espaçamento das Redes Sociais (O botão em si está em components.css) */
     .social-login {
         display: flex;
         justify-content: center;
@@ -72,27 +69,44 @@
 }
 
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 601px){ /* TELA DESKTOP */
     /* Container Principal do Card */
         .login-card {
             background-color: var(--fundo-card);
             width: 90%;
-            max-width: 290px;
+            max-width: 750px;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
             padding: 30px 18px;
             border-radius: 24px;
-            /* Sombra sutil simulando o brilho azul nas bordas */
             box-shadow: -15px 0 45px -20px rgba(66, 153, 225, 0.15), 
                          15px 0 45px -20px rgba(66, 153, 225, 0.15),
                          inset 0 1px 1px rgba(255, 255, 255, 0.05);
             text-align: center;
+        } 
+
+        .logo{ /* Lado esquerdo */
+            width: 45%;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .logo{
-            padding-bottom: 25px;
+        .form-container { /*Lado direito*/
+        width: 55%; /* Ocupa 55% do espaço */
+        padding: 50px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         }
 
         .logo-img {
-            max-width: 100px; 
+            max-width: 120px; 
             height: auto;     
             display: block;
             margin: 0 auto;
@@ -100,7 +114,7 @@
 
         .login-card h1.subtitle{
             color: var(--texto-secudario);
-            font-size: 30px;
+            font-size: 36px;
             line-height: 1;
             padding-bottom: 0px; 
             font-family: "aston", cursive; 
@@ -121,11 +135,13 @@
             justify-content: center;
             gap: 25px;
             margin-bottom: 32px;
+            
         }
 
         .footer-text {
             color: var(--texto-secudario);
-            font-size: 12px;
+            font-size: 13px;
+            padding-top: 1px;
         }
 
         .footer-text a {
