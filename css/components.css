@@ -1,0 +1,200 @@
+/* Inputs (Campos de Texto) */
+
+@media screen and (max-width: 600px){
+    .input-campo {
+    background-color: var(--fundo-input);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    margin-bottom: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .input-campo:focus-within {
+        border-color: var(--icon-destaque);
+        box-shadow: 0 0 0 5px var(--border-glow);
+    }
+
+    .input-campo i.icon-left {
+        color: var(--texto-secudario);
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    .input-campo input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--texto-primario);
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .input-campo input::placeholder {
+        color: var(--texto-secudario);
+    }
+
+    .input-campo i.icon-right {
+        color: var(--icon-destaque);
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* Botões (Primário e Social) */
+
+    .btn-primary {
+        width: 100%;
+        background-color: var(--fundo-botao);
+        color: var(--texto-secudario);
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-bottom: 13px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-secundary {
+        width: 100%;
+        background-color: var(--icon-destaque);
+        color: var(--texto-primario);
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #35383f;
+    }
+
+
+    .btn-social {
+        background: transparent;
+        border: none;
+        color: var(--texto-secudario);
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .btn-social:hover {
+        color: var(--texto-primario);
+    }
+
+    .btn-social i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 601px){
+    .input-campo {
+            background-color: var(--fundo-input);
+            border: 1px solid transparent;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            margin-bottom: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-campo:focus-within {
+            border-color: var(--icon-destaque);
+            box-shadow: 0 0 0 5px var(--border-glow);
+        }
+
+        .input-campo i.icon-left {
+            color: var(--texto-secudario);
+            font-size: 16px;
+            margin-right: 12px;
+        }
+
+        .input-campo input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--texto-primario);
+            font-size: 15px;
+            width: 100%;
+        }
+
+        .input-campo input::placeholder {
+            color: var(--texto-secudario);
+        }
+
+        .input-campo i.icon-right {
+            color: var(--icon-destaque);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            background-color: var(--fundo-botao);
+            color: var(--texto-secudario);
+            border: none;
+            border-radius: 12px;
+            padding: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secundary {
+            width: 100%;
+            background-color: var(--icon-destaque);
+            color: var(--texto-primario);
+            border: none;
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 0px;
+            margin-bottom: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #35383f;
+        }
+
+        .btn-social {
+            background: transparent;
+            border: none;
+            color: var(--texto-secudario);
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .btn-social:hover {
+            color: var(--texto-primario);
+        }
+
+        .btn-social i {
+            font-size: 16px;
+        }
+}

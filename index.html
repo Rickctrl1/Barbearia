@@ -1,23 +1,68 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login - Modern Dark Design</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    
 </head>
 <body>
-    <header>
 
-    </header>
+    <div class="login-card">
+        <div class="logo">
+            <img src="icon.png" alt="" class="logo-img">
+                <h1 class="subtitle">Diamante</h1>
+                <p class="subtitle"><b>BARBEARIA</b></p>
+                <p class="subtitle" style="font-size: 0.6em;">desde 2016</p>
+        </div>
+        
+        
 
-    <main>
-        <h1>em andamento..</h1>
-    </main>
+        <form action="#" method="POST">
+            <!-- Campo de E-mail -->
+            <div class="input-campo">
+                <i class="fa-regular fa-envelope icon-left"></i>
+                <input type="email" placeholder="Insira seu e-mail" required>
+            </div>
 
-    <footer>
+            <!-- Campo de Senha -->
+            <div class="input-campo">
+                <i class="fa-solid fa-lock icon-left"></i>
+                <input type="password" placeholder="Digite sua senha" required>
+                <i class="fa-solid fa-eye-slash icon-right" title="Toggle password visibility"></i>
+            </div>
 
-    </footer>
+            <!-- Botão Login -->
+            <button type="submit" class="btn-primary">Login</button>
+
+            <!--botão do barbeiro-->
+            <button type="submit" class="btn-secundary">Área do barbeiro </button>
+        </form>
+
+        <!-- Redes Sociais -->
+        <div class="social-login">
+            <button type="button" class="btn-social">
+                <i class="fa-brands fa-google"></i> Google
+            </button>
+            
+        </div>
+
+        <!-- Rodapé -->
+        <p class="footer-text">
+            Não tem conta? <a href="#">Sign up</a>
+        </p>
+    </div>
+
 </body>
 </html>

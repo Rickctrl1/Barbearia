@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Aston';
+    src: url(../fontes/Aston\ Script.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variáveis de Cores e Tema */
+:root {
+    --fundo-pag : #050a15; 
+    --fundo-card: #15161a; 
+    --fundo-input: #1b1c21; 
+    --fundo-botao: #282a2f; 
+    --texto-primario: #ffffff; 
+    --texto-secudario: #8c8f9b; 
+    --icon-destaque: #2b6cb0; 
+    --link-e-brilho: #4299e1; 
+    --border-glow: rgba(43, 108, 176, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--fundo-pag);
+    /* Fundo com  gradiente escuro imitando a imagem */
+    background: radial-gradient(circle at center, #0a1128 0%, #03050a 250%);
+    color: var(--texto-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
