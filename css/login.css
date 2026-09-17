@@ -74,7 +74,7 @@
         .login-card {
             background-color: var(--fundo-card);
             width: 90%;
-            max-width: 750px;
+            max-width: 650px;
             display: flex;
             flex-direction: row;
             align-items: stretch;
@@ -86,7 +86,7 @@
             text-align: center;
         } 
 
-        .logo{ /* Lado esquerdo */
+        .logo { /* Lado esquerdo */
             width: 45%;
             background-color: rgba(0, 0, 0, 0.2);
             display: flex;
@@ -94,11 +94,12 @@
             justify-content: center;
             padding: 40px 20px;
             border-right: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
         }
 
         .form-container { /*Lado direito*/
         width: 55%; /* Ocupa 55% do espaço */
-        padding: 50px 40px;
+        padding: 40px 14px 0px 14px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -134,7 +135,8 @@
             display: flex;
             justify-content: center;
             gap: 25px;
-            margin-bottom: 32px;
+            margin-top: 10px;
+            margin-bottom: 15px;
             
         }
 
