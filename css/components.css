@@ -19,7 +19,7 @@
     }
 
     .input-campo i.icon-left {
-        color: var(--texto-secudario);
+        color: var(--texto-secundario);
         font-size: 16px;
         margin-right: 12px;
     }
@@ -34,7 +34,7 @@
     }
 
     .input-campo input::placeholder {
-        color: var(--texto-secudario);
+        color: var(--texto-secundario);
     }
 
     .input-campo i.icon-right {
@@ -48,7 +48,7 @@
     .btn-primary {
         width: 100%;
         background-color: var(--fundo-botao);
-        color: var(--texto-secudario);
+        color: var(--texto-secundario);
         border: none;
         border-radius: 12px;
         padding: 12px;
@@ -60,46 +60,25 @@
         transition: background-color 0.3s ease;
     }
 
-    .btn-secundary {
-        width: 100%;
-        background-color: var(--icon-destaque);
-        color: var(--texto-primario);
-        border: none;
-        border-radius: 12px;
-        padding: 12px;
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-        margin-top: 0px;
-        margin-bottom: 40px;
-        transition: background-color 0.3s ease;
-    }
-
     .btn-primary:hover {
         background-color: #35383f;
-    }
-
-    .btn-secundary:hover { 
-            background-color: #2c5282; 
-    }
-    
+    }    
     
     .esqueceu{
         font-size: 12px;
         padding-left: 160px;
         padding-bottom: 5px;
-        
     }
 
     .esqueceu a{
-        color: var(--texto-secudario);
+        color: var(--texto-secundario);
         text-decoration: none;
     }
 
     .btn-social {
         background: transparent;
         border: none;
-        color: var(--texto-secudario);
+        color: var(--texto-secundario);
         font-size: 14px;
         font-weight: 500;
         display: flex;
@@ -136,7 +115,7 @@
         }
 
         .input-campo i.icon-left {
-            color: var(--texto-secudario);
+            color: var(--texto-secundario);
             font-size: 16px;
             margin-right: 12px;
         }
@@ -151,7 +130,7 @@
         }
 
         .input-campo input::placeholder {
-            color: var(--texto-secudario);
+            color: var(--texto-secundario);
         }
 
         .input-campo i.icon-right {
@@ -163,7 +142,7 @@
         .btn-primary {
             width: 100%;
             background-color: var(--fundo-botao);
-            color: var(--texto-secudario);
+            color: var(--texto-secundario);
             border: none;
             border-radius: 12px;
             padding: 14px;
@@ -203,14 +182,14 @@
         }
 
         .esqueceu a {
-            color: var(--texto-secudario);
+            color: var(--texto-secundario);
             text-decoration: none;
         }
 
         .btn-social {
             background: transparent;
             border: none;
-            color: var(--texto-secudario);
+            color: var(--texto-secundario);
             font-size: 14px;
             font-weight: 500;
             display: flex;
