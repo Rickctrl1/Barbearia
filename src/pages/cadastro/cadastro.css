@@ -1,0 +1,87 @@
+@media screen and (max-width: 600px){ 
+    /*TELA MOBILE*/
+    .card{
+    background-color: var(--fundo-card);
+    width: 100%;
+    max-width: 340px;
+    padding: 45px 17px;
+    border-radius: 24px;
+    box-shadow: -15px 0 45px -20px rgba(66, 153, 225, 0.15), 
+                 15px 0 45px -20px rgba(66, 153, 225, 0.15),
+                 inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    }
+
+    /* Área da Logo e Textos */
+
+    
+
+    /* Área dos Campos */
+    .input-campo {
+    background-color: var(--fundo-input);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    margin-bottom: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .input-campo:focus-within { /* efeito de foco */
+        border-color: var(--icon-destaque);
+        box-shadow: 0 0 0 5px var(--border-glow);
+    }
+
+    .input-campo i.icon-left {
+        color: var(--texto-secundario);
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    .input-campo input { /*dentro dos inputs*/
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--texto-primario);
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .input-campo input::placeholder {
+        color: var(--texto-secundario);
+    }
+
+    .icon-right{ /*icon de visualização de senha */
+        color: var(--icon-destaque);
+        cursor: pointer;
+        font-size: 16px;
+        background: none;
+
+        border: none;
+        padding: 0;
+        outline: none;
+    } 
+
+    /* Botões (Primário e Social) */
+    .btn-registro {
+        width: 100%;
+        background-color: var(--fundo-botao);
+        color: var(--texto-secundario);
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 13px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-registro:hover {
+        background-color: #35383f;
+    }  
+
+    
+}
