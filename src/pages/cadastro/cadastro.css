@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     padding: 8px 15px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -56,6 +56,14 @@
 
     .input-campo input::placeholder {
         color: var(--texto-secundario);
+    }
+
+    .inputs p{
+        font-size: 12px;
+        color: var(--texto-secundario);
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 5px;
     }
 
     .icon-right{ /*icon de visualização de senha */
@@ -89,5 +97,113 @@
         background-color: #35383f;
     }  
 
+
+
     
+}
+
+@media screen and (min-width: 601px){
+    .card{
+    background-color: var(--fundo-card);
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 30px 18px;
+    border-radius: 24px;
+    box-shadow: -15px 0 45px -20px rgba(66, 153, 225, 0.15), 
+                 15px 0 45px -20px rgba(66, 153, 225, 0.15),
+                 inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    }
+
+    /*lado esquerdo*/
+    .texto{
+        width: 45%;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+        padding-bottom: 25px;
+        color: var(--link-e-brilho);
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    /*lado direito*/
+    .inputs {
+        width: 55%;
+        padding: 40px 14px 0px 14px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .input-campo {
+        background-color: var(--fundo-input);
+        border: 1px solid transparent;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        margin-bottom: 16px;
+        transition: border-color 0.3s ease, box-shadow 0.3 ease;
+    }
+
+    .input-campo input { /*dentro dos inputs*/
+        background: transparent;
+        border: none;
+        outline: none;
+        color: var(--texto-primario);
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .input-campo:focus-within { /* efeito de foco */
+        border-color: var(--icon-destaque);
+        box-shadow: 0 0 0 5px var(--border-glow);
+    }
+
+    .inputs p{
+        font-size: 12px;
+        color: var(--texto-secundario);
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    .icon-right{ /*icon de visualização de senha */
+        color: var(--icon-destaque);
+        cursor: pointer;
+        font-size: 16px;
+        background: none;
+
+        border: none;
+        padding: 0;
+        outline: none;
+    } 
+
+    .btn-registro {
+        width: 100%;
+        background-color: var(--fundo-botao);
+        color: var(--texto-secundario);
+        border: none;
+        border-radius: 12px;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 13px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-registro:hover {
+        background-color: #35383f;
+    } 
+
+
+
 }
